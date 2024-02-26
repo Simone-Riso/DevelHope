@@ -4,6 +4,6 @@ public class Operatori_aritmetici_2 {
     }
 
     public static double media(int valore1, int valore2, int valore3) {
-        return (double) (valore1 + valore2 + valore3);
+        return (double) (valore1 + valore2 + valore3)/3;
     }
 }
