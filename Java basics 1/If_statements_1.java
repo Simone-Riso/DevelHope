@@ -1,4 +1,4 @@
-public class If_statementes_1 {
+public class If_statements_1 {
     public static void main(String[] args) {
         for (int i = 1; i <= 100; i++) {
             System.out.println("Valore " + i);
