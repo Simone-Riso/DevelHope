@@ -1,4 +1,4 @@
-public class I_tipi_primitivi_in_Java_1 {
+public class Tipi_primitivi_1 {
     public static void main(String[] args) {
         double base = 5.0;
         double altezza = 5.0;

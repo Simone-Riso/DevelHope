@@ -1,4 +1,4 @@
-public class I_tipi_primitivi_in_java_2 {
+public class Tipi_primitivi_2 {
     public static void main(String[] args) {
         char x = 'x';
         char y = 'y';
