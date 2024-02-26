@@ -1,4 +1,4 @@
-public class If_statements_2 {
+public class If_statement_2 {
     public static void main(String[] args) {
         String str = "Hello, world!";
         int lunghezza = calcolaLunghezza(str);
