@@ -1,4 +1,4 @@
-public class FileTest {
+public class File_test {
     public static void main(String[] args) {
         double baseTriangolo = 5.0;
         double altezzaTriangolo = 5.0;
