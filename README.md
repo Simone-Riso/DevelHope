@@ -1,2 +1,1 @@
-Repository per gli esercizi Develhope.
-Gli esercizi sono organizzati x cartelle.
+Repository per gli esercizi Develhope, gli esercizi sono organizzati per cartelle.
