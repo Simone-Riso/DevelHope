@@ -1,3 +1,4 @@
+package Teoria_Objects;
 public class Articolo {
     public String nome;
 

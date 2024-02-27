@@ -1,3 +1,4 @@
+package Teoria_Objects;
 public class Objects_class {
     public static void main(String[] args) {
         Articolo article1 = new Articolo();
