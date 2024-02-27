@@ -1,3 +1,4 @@
+package Operatori_di_assegnazione;
 public class Operatori_di_comparazione_2 {
     public static void main(String[] args) {
         char carattere1 = 'x';

@@ -1,3 +1,4 @@
+package Switch_statement;
 public class Switch_statement_1 {
     public static void main(String[] args) {
         int value = 5;

@@ -1,3 +1,4 @@
+package Tipi_primitivi;
 public class Tipi_primitivi_2 {
     public static void main(String[] args) {
         char x = 'x';

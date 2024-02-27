@@ -1,3 +1,4 @@
+package Operatori_aritmetici;
 public class Operatori_aritmetici_1 {
     public static void main(String[] args) {
         System.out.println("Quoziente:" + quoziente(1, 2));

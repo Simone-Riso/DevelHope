@@ -1,3 +1,4 @@
+package Matrici;
 public class Matrici_1 {
     public static void main(String[] args) {
         int[][] matrice = inizializzaMatrice(3, 4);

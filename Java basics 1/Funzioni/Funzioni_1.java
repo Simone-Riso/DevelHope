@@ -1,3 +1,4 @@
+package Funzioni;
 public class Funzioni_1 {
     public static void main(String[] args) {
         System.out.println("La somma dei due numeri è: " + somma(1.00, 2.00));

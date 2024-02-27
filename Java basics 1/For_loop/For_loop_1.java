@@ -1,3 +1,4 @@
+package For_loop;
 public class For_loop_1 {
     public static void main(String[] args) {
         arithmeticTable(5);

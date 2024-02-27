@@ -1,3 +1,4 @@
+package Funzioni;
 public class Funzioni_2 {
     public static void main(String[] args) {
         String inputString = "Ciao";

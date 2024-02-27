@@ -1,3 +1,4 @@
+package Operatori_logici;
 public class Operatori_logici_2 {
     public static void main(String[] args) {
         int numero = 10;

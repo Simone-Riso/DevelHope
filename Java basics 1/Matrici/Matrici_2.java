@@ -1,3 +1,4 @@
+package Matrici;
 public class Matrici_2 {
     public static void main(String[] args) {
         // Inizializzazione della matrice

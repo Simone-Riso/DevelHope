@@ -1,3 +1,4 @@
+package Tipi_primitivi;
 public class Tipi_primitivi_1 {
     public static void main(String[] args) {
         double base = 5.0;

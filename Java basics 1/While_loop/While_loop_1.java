@@ -1,3 +1,4 @@
+package While_loop;
 public class While_loop_1 {
     public static void main(String[] args) {
         System.out.println("La somma è uguale a: " + sumOfValues(5));

@@ -1,3 +1,4 @@
+package Operatori_aritmetici;
 public class Operatori_aritmetici_2 {
     public static void main(String[] args) {
         System.out.println("Media: " + media(1, 2, 3));

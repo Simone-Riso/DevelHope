@@ -1,3 +1,4 @@
+package Operatori_di_assegnazione;
 public class Operatori_di_comparazione_1 {
     public static void main(String[] args) {
         int numero1 = 10;
