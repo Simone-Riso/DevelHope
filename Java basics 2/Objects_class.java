@@ -12,7 +12,7 @@ public class Objects_class {
         System.out.println("Articolo 2: " + article2);
 
         Carrello carrello = new Carrello();
-        carrello.articoli = new Articolo[] {article1, article2};
+        carrello.articoli = new Articolo[] { article1, article2 };
         carrello.prezzoFinale = article1.prezzo + article2.prezzo;
 
         System.out.println("Carrello: " + carrello);
