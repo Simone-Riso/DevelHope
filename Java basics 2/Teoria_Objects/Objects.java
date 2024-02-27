@@ -1,5 +1,5 @@
 package Teoria_Objects;
-public class main {
+public class Objects {
     public static void main(String[] args) {
         Articolo article1 = new Articolo();
         article1.nome = "Pizza";
