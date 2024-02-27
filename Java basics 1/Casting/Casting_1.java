@@ -1,3 +1,4 @@
+package Casting;
 public class Casting_1 {
     public static void main(String[] args) {
         double x = 3.00;
