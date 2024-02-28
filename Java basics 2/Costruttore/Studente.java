@@ -3,7 +3,7 @@ package Costruttore;
 import java.util.UUID;
 
 public class Studente {
-    String id, nome, cognome;
+    private String id, nome, cognome;
 
     public Studente(String nome, String cognome) {
         this.nome = nome;
