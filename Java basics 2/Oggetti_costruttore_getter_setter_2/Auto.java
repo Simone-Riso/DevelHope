@@ -1,4 +1,4 @@
-package Costruttore;
+package Oggetti_costruttore_getter_setter_2;
 
 public class Auto {
     private int cilindrata;

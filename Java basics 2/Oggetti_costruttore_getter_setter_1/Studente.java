@@ -1,4 +1,4 @@
-package Costruttore;
+package Oggetti_costruttore_getter_setter_1;
 
 import java.util.UUID;
 
