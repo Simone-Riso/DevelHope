@@ -21,20 +21,20 @@ public class Costruttore_1 {
             return id;
         }
 
-        public String getNome() {
-            return nome;
-        }
-
-        public String getCognome() {
-            return cognome;
-        }
-
         public void setId(String id) {
             this.id = id;
         }
 
+        public String getNome() {
+            return nome;
+        }
+
         public void setNome(String nome) {
             this.nome = nome;
+        }
+
+        public String getCognome() {
+            return cognome;
         }
 
         public void setCognome(String cognome) {
