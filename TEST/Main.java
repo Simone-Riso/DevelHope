@@ -1,8 +1,8 @@
-package Primo_progetto_team;
+package TEST;
 
 import java.util.Scanner;
 
-public class Calcolatrice {
+public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
