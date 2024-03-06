@@ -1,6 +1,6 @@
 package Classi_astratte;
 
-class Triangolo extends Forma {
+public class Triangolo extends Forma {
     private double base;
     private double altezza;
 
@@ -26,7 +26,7 @@ class Triangolo extends Forma {
     }
 
     @Override
-    double calcolaArea() {
+    public double calcolaArea() {
         return (base * altezza) / 2;
     }
 }

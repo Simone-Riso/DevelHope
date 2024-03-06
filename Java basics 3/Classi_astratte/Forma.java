@@ -1,5 +1,5 @@
 package Classi_astratte;
 
-abstract class Forma {
+public abstract class Forma {
     abstract double calcolaArea();
 }
