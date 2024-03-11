@@ -1,4 +1,4 @@
-package Teoria_oop;
+package TeoriaBasics2;
 
 public class Articolo {
 

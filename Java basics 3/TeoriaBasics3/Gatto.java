@@ -1,4 +1,4 @@
-package Teoria;
+package TeoriaBasics3;
 
 public class Gatto extends Pastore_tedesco{
 
