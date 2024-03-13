@@ -17,8 +17,11 @@ public class Main {
         if (numeratore == null || denominatore == null) {
             throw new IllegalArgumentException("Errore: Rilevato input null");
         } else if (denominatore == 0) {
-            throw new IllegalArgumentException("Errore: Impossibile dividere per zero");
-        }
-        return numeratore / denominatore;
+            throw new ArithmeticException("Errore: Impossibile dividere per zero");
+        } return numeratore / denominatore;
     }
 }
+
+// Scrivere una funzione che accetti in input un numeratore e un denominatore
+// Controlli che il numeratore e il denominatore non siano null
+// Usare la funzione appena scritta in due blocchi di codice dove si cattura l'eventuale eccezione.
