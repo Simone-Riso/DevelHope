@@ -8,7 +8,7 @@ public class Main {
         try {
             int risultato = calcolaDivisione(numeratore, denominatore);
             System.out.println("Il risultato della divisione è: " + risultato);
-        } catch (Exception e) {
+        } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
         }
     }
