@@ -2,31 +2,40 @@ package Autoboxing_Unboxing;
 
 public class Main {
     public static void main(String[] args) {
-        primaFunzione(5, 10, 10, 4.99);
-        secondaFunzione('A', 'a');
-        terzaFunzione(10, 20, 20, 9.99);
-        quartaFunzione('B', 'b');
+        printSumInt(5, 3);
+        printChar('A');
+        printSumInteger(10, 20);
+        printCharacter('B');
+
+        int primitiveInt = 10;
+        double primitiveDouble = 9.99;
+        char primitiveChar = 'X';
+
+        Integer boxedInt = primitiveInt;
+        Double boxedDouble = primitiveDouble;
+        Character boxedChar = primitiveChar;
+
+        int unboxedInt = boxedInt;
+        double unboxedDouble = boxedDouble;
+        char unboxedChar = boxedChar;
+        
     }
 
-    public static void primaFunzione(int numero1, int numero2, int numero3, double numero4) {
-        System.out.println("Somma int: " + (numero1 + numero2));
-        System.out.println("Autoboxing Integer: " + (Integer) numero3);
-        System.out.println("Autoboxing Double: " + (Double) numero4);
+    public static void printSumInt(int num1, int num2) {
+        int sum = num1 + num2;
+        System.out.println("La somma di " + num1 + " e " + num2 + " è: " + sum);
     }
 
-    public static void secondaFunzione(char carattere1, char carattere2) {
-        System.out.println("Stampa char: " + carattere1);
-        System.out.println("Autoboxing Character: " + (Character) carattere2);
+    public static void printChar(char character) {
+        System.out.println("Il carattere è: " + character);
     }
 
-    public static void terzaFunzione(Integer numero1, Integer numero2, Integer numero3, Double numero4) {
-        System.out.println("Somma Integer: " + (numero1 + numero2));
-        System.out.println("Unboxing int: " +  (int) numero3);
-        System.out.println("Unboxing double: " + (double) numero4);
+    public static void printSumInteger(Integer num1, Integer num2) {
+        int sum = num1 + num2;
+        System.out.println("La somma di " + num1 + " e " + num2 + " è: " + sum);
     }
 
-    public static void quartaFunzione(Character carattere1, Character carattere2) {
-        System.out.println("Stanpa Character: " + carattere1);
-        System.out.println("Unboxing char: " + (char) carattere2);
+    public static void printCharacter(Character character) {
+        System.out.println("Il carattere è: " + character);
     }
 }
