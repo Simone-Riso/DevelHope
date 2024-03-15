@@ -2,18 +2,22 @@ package Exceptions_1;
 
 public class Main {
     public static void main(String[] args) {
-        int minimo = 0;
-        int massimo = 10;
-        int numero = 6;
+        int limiteInferiore = 0;
+        int limiteSuperiore = 10;
+        int numero = 5;
 
-        System.out.println("Il numero è nel range: " + nelRange(numero, minimo, massimo));
+        try {
+            System.out.println("Il numero è nel range: " + nelRange(numero, limiteInferiore, limiteSuperiore));
+        } catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage());
+        }
     }
 
-    public static boolean nelRange(int numero, int minimo, int massimo) {
-        if (numero >= minimo && numero <= massimo) {
+    public static boolean nelRange(int numero, int limiteInferiore, int limiteSuperiore) {
+        if (numero >= limiteInferiore && numero <= limiteSuperiore) {
             return true;
         } else {
-            throw new ArithmeticException("Il numero non rientra nel range tra " + minimo + " e " + massimo);
+            throw new IllegalArgumentException("Il numero non rientra nel range tra " + limiteInferiore + " e " + limiteSuperiore);
         }
     }
 }
