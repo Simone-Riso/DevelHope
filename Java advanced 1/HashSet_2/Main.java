@@ -5,21 +5,16 @@ import java.util.Iterator;
 
 public class Main {
     public static void main(String[] args) {
-        HashSet<String> newElement = new HashSet<String>();
-        newElement.add("Uva");
-        newElement.add("Kiwi");
+        String searchFruit = "Banana";
 
-        HashSet<String> setFrutta = setRiempito();
-        setFrutta.addAll(newElement);
-
-        Iterator<String> iterator = setFrutta.iterator();
-        while (iterator.hasNext()) {
-            String element = iterator.next();
-            System.out.println("Elemento: " + element);
+        if (readFruitSet().contains(searchFruit)) {
+            System.out.println(searchFruit + " is in the set");
+        } else {
+            System.out.println(searchFruit + " is not in the set");
         }
     }
 
-    private static HashSet<String> setRiempito() {
+    private static HashSet<String> readFruitSet() {
         HashSet<String> setFrutta = new HashSet<String>();
 
         setFrutta.add("Mela");
