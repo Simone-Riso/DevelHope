@@ -20,14 +20,18 @@ public class Main {
         Character character = 'Y';
         char anotherCharacter = character;
 
+        printChar(primitiveChar);
         printChar(anotherCharacter);
         printCharacter(character);
+        printCharacter(wrappedChar);
 
+        /*
         double primitiveDouble = 9.99;
         Double wrappedDouble = primitiveDouble;
-        
         Double anotherWrappedDouble = 19.99;
         double anotherPrimitiveDouble = anotherWrappedDouble;
+        */
+
         
     }
 
