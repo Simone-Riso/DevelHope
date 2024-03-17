@@ -8,16 +8,26 @@ public class Main {
         printCharacter('B');
 
         int primitiveInt = 10;
-        double primitiveDouble = 9.99;
+        Integer wrappedInt = primitiveInt;
+        Integer anotherWrappedInt = 20;
+        int anotherPrimitiveInt = anotherWrappedInt;
+
+        printSumInt(wrappedInt, anotherWrappedInt);
+        printSumInteger(primitiveInt, anotherPrimitiveInt);
+
         char primitiveChar = 'X';
+        Character wrappedChar = primitiveChar;
+        Character character = 'Y';
+        char anotherCharacter = character;
 
-        Integer boxedInt = primitiveInt;
-        Double boxedDouble = primitiveDouble;
-        Character boxedChar = primitiveChar;
+        printChar(anotherCharacter);
+        printCharacter(character);
 
-        int unboxedInt = boxedInt;
-        double unboxedDouble = boxedDouble;
-        char unboxedChar = boxedChar;
+        double primitiveDouble = 9.99;
+        Double wrappedDouble = primitiveDouble;
+        
+        Double anotherWrappedDouble = 19.99;
+        double anotherPrimitiveDouble = anotherWrappedDouble;
         
     }
 
