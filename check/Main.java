@@ -11,14 +11,12 @@ public class Main {
         dottore1.aggiungiPaziente("Daniel");
         dottore1.aggiungiPaziente("Valerio");
 
-        dottore2.aggiungiPaziente("Luca");
-        dottore3.aggiungiPaziente("Simone");
-        dottore4.aggiungiPaziente("Zhanna");
+        dottore1.ricercaPaziente("Daniel");
 
         dottore1.nomeDottore();
-        //dottore2.nomeDottore();
-        //dottore3.nomeDottore();
-        //dottore4.nomeDottore();
+        // dottore2.nomeDottore();
+        // dottore3.nomeDottore();
+        // dottore4.nomeDottore();
 
     }
 }
