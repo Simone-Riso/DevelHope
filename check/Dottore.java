@@ -1,5 +1,7 @@
 package check;
 
+import java.util.Arrays;
+
 public class Dottore {
     private String ID;
     private String nome;
@@ -74,22 +76,23 @@ public class Dottore {
     }
 
     public void ricercaPaziente(String inputToSearch) {
-        for (int i = 0; i < pazienti.length;) {
-            if (pazienti[i] == inputToSearch) {
+        for (int i = 0; i < pazienti.length; i++) {
+            if (pazienti[i].equals(inputToSearch)) {
                 System.out.println("Paziente presente");
-            } else {
-                System.out.println("Paziente non presente");
+                break;
             }
-            break;
         }
     }
 
     public void nomeDottore() {
         System.out.println("Dottor : " + nome + " " + cognome);
         System.out.println("Specializzazione: " + specializzazione);
-        for (int i = 0; i < pazienti.length;) {
-            System.out.println("Pazienti: " + pazienti[i]);
-            break;
+        for (int i = 0; i < pazienti.length; i++) {
+            if (pazienti[i] == null) {
+                break;
+            } else {
+                System.out.println("Pazienti: " + pazienti[i]);
+            }
         }
     }
 }
