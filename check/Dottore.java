@@ -6,9 +6,9 @@ public class Dottore {
     private String cognome;
     private int anniEsperienza;
     private String[] pazienti = new String[200];
-    private Enum specializzazione;
+    private specializzazione specializzazione;
 
-    public Dottore(String iD, String nome, String cognome, int anniEsperienza, Enum specializzazione) {
+    public Dottore(String iD, String nome, String cognome, int anniEsperienza, specializzazione specializzazione) {
         ID = iD;
         this.nome = nome;
         this.cognome = cognome;
@@ -56,10 +56,19 @@ public class Dottore {
         this.pazienti = pazienti;
     }
 
+    public specializzazione getSpecializzazione() {
+        return specializzazione;
+    }
+
+    public void setSpecializzazione(specializzazione specializzazione) {
+        this.specializzazione = specializzazione;
+    }
+
     public void aggiungiPaziente(String nomeCognome) {
         for (int i = 0; i < pazienti.length; i++) {
             if (pazienti[i] == null) {
                 pazienti[i] = nomeCognome;
+                break;
             }
         }
     }
@@ -67,7 +76,7 @@ public class Dottore {
     public void ricercaPaziente(String inputToSearch) {
         for (int i = 0; i < pazienti.length;) {
             if (pazienti[i] == inputToSearch) {
-                System.out.println("Paziente" + " " + inputToSearch + " " + "presente");
+                System.out.println("Paziente presente");
             } else {
                 System.out.println("Paziente non presente");
             }
