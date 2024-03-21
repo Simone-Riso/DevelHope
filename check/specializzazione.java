@@ -1,6 +1,6 @@
 package check;
 
-public enum specializzazione {
+public enum Specializzazione {
     CARDIOLOGO,
     CHIRURGO,
     ONCOLOGO,
