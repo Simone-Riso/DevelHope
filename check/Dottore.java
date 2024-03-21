@@ -1,7 +1,5 @@
 package check;
 
-import java.util.Arrays;
-
 public class Dottore {
     private String ID;
     private String nome;
