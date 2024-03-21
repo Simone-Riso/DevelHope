@@ -34,5 +34,4 @@ public class SettoreOspedaliero {
     public void setDottori(String dottori) {
         this.dottori = dottori;
     }
-
 }
