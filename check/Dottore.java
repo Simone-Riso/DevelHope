@@ -1,14 +1,16 @@
 package check;
 
+import java.util.Arrays;
+
 public class Dottore {
     private String ID;
     private String nome;
     private String cognome;
     private int anniEsperienza;
     private String[] pazienti = new String[200];
-    private specializzazione specializzazione;
+    private Specializzazione specializzazione;
 
-    public Dottore(String iD, String nome, String cognome, int anniEsperienza, specializzazione specializzazione) {
+    public Dottore(String iD, String nome, String cognome, int anniEsperienza, Specializzazione specializzazione) {
         ID = iD;
         this.nome = nome;
         this.cognome = cognome;
@@ -56,11 +58,11 @@ public class Dottore {
         this.pazienti = pazienti;
     }
 
-    public specializzazione getSpecializzazione() {
+    public Specializzazione getSpecializzazione() {
         return specializzazione;
     }
 
-    public void setSpecializzazione(specializzazione specializzazione) {
+    public void setSpecializzazione(Specializzazione specializzazione) {
         this.specializzazione = specializzazione;
     }
 
@@ -75,8 +77,10 @@ public class Dottore {
 
     public void ricercaPaziente(String inputToSearch) {
         for (int i = 0; i < pazienti.length; i++) {
-            if (pazienti[i].equals(inputToSearch)) {
-                System.out.println("Paziente presente");
+            if (pazienti[i] != null && pazienti[i].toLowerCase().contains(inputToSearch.toLowerCase())) {
+                System.out.println("Paziente" + " " + pazienti[i] + " " + "presente");
+            } else if (!Arrays.toString(pazienti).toLowerCase().contains(inputToSearch.toLowerCase())) {
+                System.out.println("Paziente morto");
                 break;
             }
         }
