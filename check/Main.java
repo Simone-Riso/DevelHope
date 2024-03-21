@@ -11,7 +11,7 @@ public class Main {
         dottore1.aggiungiPaziente("Daniel");
         dottore1.aggiungiPaziente("Valerio");
 
-        dottore1.ricercaPaziente("Daniel");
+        dottore1.ricercaPaziente("Gian");
 
         dottore1.nomeDottore();
         // dottore2.nomeDottore();

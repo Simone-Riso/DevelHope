@@ -3,7 +3,7 @@ package check;
 public class SettoreOspedaliero {
     String identificativo;
     String nome;
-    Dottore[] dottori = new Dottore[10];
+    Dottore[] dottori = new Dottore[5];
 
     public SettoreOspedaliero(String identificativo, String nome) {
         this.identificativo = identificativo;
@@ -26,16 +26,16 @@ public class SettoreOspedaliero {
         this.nome = nome;
     }
 
+    public Dottore[] getDottori() {
+        return dottori;
+    }
+
+    public void setDottori(Dottore[] dottori) {
+        this.dottori = dottori;
+    }
+
     public void mediaPazienti(SettoreOspedaliero settore) {
         int totaliPazienti = 0;
         int totaliDottori = 0;
-
-        for (int i = 0; i < dottori.length; i++) {
-            if (dottori != null) {
-                totaliDottori++;
-            } for (int j = 0; j < dottori[i].getPazienti().length; j++) {
-                
-            }
-        }
     }
 }

@@ -77,10 +77,10 @@ public class Dottore {
 
     public void ricercaPaziente(String inputToSearch) {
         for (int i = 0; i < pazienti.length; i++) {
-            if (pazienti[i] != null && pazienti[i].toLowerCase().contains(inputToSearch.toLowerCase())) {
+            if (pazienti[i] != null && pazienti[i].contains(inputToSearch)) {
                 System.out.println("Paziente" + " " + pazienti[i] + " " + "presente");
-            } else if (!Arrays.toString(pazienti).toLowerCase().contains(inputToSearch.toLowerCase())) {
-                System.out.println("Paziente morto");
+            } else if (!Arrays.toString(pazienti).contains(inputToSearch)) {
+                System.out.println("Paziente" + " " + inputToSearch + " " + "non presente");
                 break;
             }
         }
