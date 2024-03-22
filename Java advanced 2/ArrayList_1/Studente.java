@@ -31,5 +31,4 @@ public class Studente {
         return "Nome: " + name + " " + "Età: " + age;
     }
 
-    
 }
