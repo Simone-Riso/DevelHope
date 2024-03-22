@@ -5,6 +5,9 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
         ArrayList<Studente> listaStudenti = new ArrayList<>();
+
+        System.out.println("Lista: " + listaStudenti);
+
         listaStudenti.add(new Studente("Simone", 22));
         listaStudenti.add(new Studente("Emiliano", 22));
         listaStudenti.add(new Studente("Liborio", 173));
