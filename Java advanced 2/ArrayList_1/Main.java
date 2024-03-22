@@ -11,7 +11,7 @@ public class Main {
 
         System.out.println("Lista degli studenti: ");
         for (Studente studente : listaStudenti) {
-            System.out.println("Nome: " + studente.getName() + " " + "Età: " + studente.getAge());
+            System.out.println(studente);
         }
 
         listaStudenti.add(new Studente("Simone", 22));
@@ -21,7 +21,7 @@ public class Main {
 
         System.out.println("Lista degli studenti: ");
         for (Studente studente : listaStudenti) {
-            System.out.println("Nome: " + studente.getName() + " " + "Età: " + studente.getAge());
+            System.out.println(studente);
         }
     }
 }
