@@ -6,14 +6,14 @@ public class Main {
     public static void main(String[] args) {
         String searchFruit = "Banana";
 
-        if (readFruitSet().contains(searchFruit)) {
+        if (fruitSet().contains(searchFruit)) {
             System.out.println(searchFruit + " is in the set");
         } else {
             System.out.println(searchFruit + " is not in the set");
         }
     }
 
-    private static HashSet<String> readFruitSet() {
+    private static HashSet<String> fruitSet() {
         HashSet<String> setFrutta = new HashSet<String>();
 
         setFrutta.add("Mela");
