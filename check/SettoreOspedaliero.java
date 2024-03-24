@@ -35,7 +35,6 @@ public class SettoreOspedaliero {
     }
 
     public void mediaPazienti(SettoreOspedaliero settore) {
-        int totaliPazienti = 0;
-        int totaliDottori = 0;
+        
     }
 }
