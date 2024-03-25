@@ -9,8 +9,8 @@ public class Main {
         HashMap<String, Integer> firstHashMap = new HashMap<>();
 
         firstHashMap.put("uno", 1);
-        firstHashMap.put("due", 1);
-        firstHashMap.put("tre", 1);
+        firstHashMap.put("due", 2);
+        firstHashMap.put("tre", 3);
 
         System.out.println("FirstHashMap: ");
         for (HashMap.Entry<String, Integer> element : firstHashMap.entrySet()) {
@@ -24,10 +24,9 @@ public class Main {
         }
 
         HashMap<String, Integer> thirdHashMap = new HashMap<>(Map.ofEntries(
-            new AbstractMap.SimpleEntry<String, Integer>("uno", 1),
-            new AbstractMap.SimpleEntry<String, Integer>("due", 2),
-            new AbstractMap.SimpleEntry<String, Integer>("tre", 3)
-        ));
+                new AbstractMap.SimpleEntry<String, Integer>("uno", 1),
+                new AbstractMap.SimpleEntry<String, Integer>("due", 2),
+                new AbstractMap.SimpleEntry<String, Integer>("tre", 3)));
 
         System.out.println("ThirdHashMap: ");
         for (Map.Entry<String, Integer> element : thirdHashMap.entrySet()) {
