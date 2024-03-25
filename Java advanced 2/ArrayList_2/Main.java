@@ -1,7 +1,6 @@
 package ArrayList_2;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 
 public class Main {
@@ -21,7 +20,7 @@ public class Main {
         listaStudenti.add(new Studente("Studente 11", 24));
         listaStudenti.add(new Studente("Studente 12", 25));
 
-        Collections.sort(listaStudenti, Comparator.comparingInt(Studente::getAge));
+        listaStudenti.sort(Comparator.comparing(Studente::getAge));
 
         for (Studente studente : listaStudenti) {
             System.out.println(studente);
