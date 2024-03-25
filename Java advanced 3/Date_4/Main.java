@@ -1,7 +1,6 @@
 package Date_4;
 
 import java.time.OffsetDateTime;
-import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 
@@ -13,10 +12,8 @@ public class Main {
         dateTime = dateTime.minusMonths(1);
         dateTime = dateTime.plusDays(7);
 
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy \nHH:mm:ss")
-                .withLocale(Locale.ITALY)
-                .withZone(ZoneId.of("Europe/Rome"));
-                
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy \nHH:mm:ss", Locale.ITALY);
+
         String formattedDateTime = dateTime.format(formatter);
         System.out.println(formattedDateTime);
     }
