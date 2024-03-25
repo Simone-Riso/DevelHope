@@ -5,7 +5,7 @@ public class Main {
         Punto punto1 = new Punto(10, 20);
 
         System.out.println("x: " + punto1.x());
-        System.out.println("x: " + punto1.y());
+        System.out.println("y: " + punto1.y());
         System.out.println("Punto: " + punto1);
 
         Punto punto2 = new Punto(5, 10);
