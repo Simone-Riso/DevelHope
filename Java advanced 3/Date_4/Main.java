@@ -16,6 +16,7 @@ public class Main {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy \nHH:mm:ss")
                 .withLocale(Locale.ITALY)
                 .withZone(ZoneId.of("Europe/Rome"));
+                
         String formattedDateTime = dateTime.format(formatter);
         System.out.println(formattedDateTime);
     }
