@@ -1,4 +1,4 @@
-package testingStuff_2;
+package Checkpoint_test_2;
 
 public class SettoreOspedaliero {
     String identificativo;

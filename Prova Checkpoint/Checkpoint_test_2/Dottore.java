@@ -1,4 +1,4 @@
-package testingStuff_2;
+package Checkpoint_test_2;
 
 import java.util.Arrays;
 
