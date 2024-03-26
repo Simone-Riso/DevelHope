@@ -15,7 +15,7 @@ public class MainTest {
         int year = data.getYear();
 
         assertEquals(2023, year);
-        //controllo che grazie a getYear year ha il valore corretto
+        //controllo che grazie a getYear ottengo il valore corretto
     }
 
     @Test
@@ -24,7 +24,7 @@ public class MainTest {
         int month = data.getMonthValue();
 
         assertEquals(3, month);
-        //controllo che grazie a getMonthValue month ha il valore corretto
+        //controllo che grazie a getMonthValue ottengo il valore corretto
     }
 
     @Test
@@ -33,7 +33,7 @@ public class MainTest {
         int day = data.getDayOfMonth();
 
         assertEquals(1, day);
-        //controllo che grazie a getDayOfMonth day ha il valore corretto
+        //controllo che grazie a getDayOfMonth ottengo il valore corretto
 
     }
 
@@ -43,7 +43,7 @@ public class MainTest {
         String dayOfTheWeek = data.getDayOfWeek().getDisplayName(TextStyle.FULL, Locale.ITALY);
 
         assertEquals("mercoledì", dayOfTheWeek);
-        //controllo che grazie a getDayOfWeek dayOfTheWeek ha il valore corretto
+        //controllo che grazie a getDayOfWeek ottengo il valore corretto
 
     }
 }
