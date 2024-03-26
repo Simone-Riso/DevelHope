@@ -1,4 +1,4 @@
-package check;
+package testingStuff_2;
 
 public enum Specializzazione {
     CARDIOLOGO,

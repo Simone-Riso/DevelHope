@@ -1,4 +1,4 @@
-package testingStuff;
+package testingStuff_1;
 
 public class Noleggio {
     private Film[] inventario = new Film[500];

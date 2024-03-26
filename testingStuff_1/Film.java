@@ -1,4 +1,4 @@
-package testingStuff;
+package testingStuff_1;
 
 public class Film {
     private String titolo;
