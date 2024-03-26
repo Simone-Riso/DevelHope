@@ -11,7 +11,7 @@ import org.junit.Test;
 
 public class MainTest {
     @Test
-    public void testGetFullDateTime() {
+    public void testFullDatestteTime() {
         ZonedDateTime dateTime = OffsetDateTime.parse("2002-03-01T13:00:00Z").toZonedDateTime();
         String fullDateTime = dateTime.format(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.FULL));
 
@@ -21,7 +21,7 @@ public class MainTest {
     }
 
     @Test
-    public void testGetMediumDateTime() {
+    public void testMediumDateTime() {
         ZonedDateTime dateTime = OffsetDateTime.parse("2002-03-01T13:00:00Z").toZonedDateTime();
         String mediumDateTime = dateTime.format(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.MEDIUM));
 
@@ -32,7 +32,7 @@ public class MainTest {
     }
 
     @Test
-    public void testGetShortDateTime() {
+    public void testShortDateTime() {
         ZonedDateTime dateTime = OffsetDateTime.parse("2002-03-01T13:00:00Z").toZonedDateTime();
         String shortDateTime = dateTime.format(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.SHORT));
 
