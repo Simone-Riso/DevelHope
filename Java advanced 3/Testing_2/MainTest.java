@@ -16,6 +16,8 @@ public class MainTest {
         String fullDateTime = dateTime.format(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.FULL));
 
         assertNotEquals(dateTime, fullDateTime);
+        // in questo modo voglio testare che effettivamente il formato è cambiato da
+        // dateTime a fullDateTime
     }
 
     @Test
@@ -24,6 +26,9 @@ public class MainTest {
         String mediumDateTime = dateTime.format(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.MEDIUM));
 
         assertNotEquals(dateTime, mediumDateTime);
+        // in questo modo voglio testare che effettivamente il formato è cambiato da
+        // dateTime a mediumDateTime
+
     }
 
     @Test
@@ -32,5 +37,8 @@ public class MainTest {
         String shortDateTime = dateTime.format(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.SHORT));
 
         assertNotEquals(dateTime, shortDateTime);
+        // in questo modo voglio testare che effettivamente il formato è cambiato da
+        // dateTime a shortDateTime
+
     }
 }
