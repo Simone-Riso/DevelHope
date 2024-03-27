@@ -76,9 +76,9 @@ public class Dottore {
     }
 
     public void ricercaPaziente(String inputToSearch) {
-        for (int i = 0; i < pazienti.length; i++) {
-            if (pazienti[i] != null && pazienti[i].contains(inputToSearch)) {
-                System.out.println("Paziente" + " " + pazienti[i] + " " + "presente");
+        for (String paziente : pazienti) {
+            if (paziente != null && paziente.contains(inputToSearch)) {
+                System.out.println("Paziente" + " " + paziente + " " + "presente");
             } else if (!Arrays.toString(pazienti).contains(inputToSearch)) {
                 System.out.println("Paziente" + " " + inputToSearch + " " + "non presente");
                 break;

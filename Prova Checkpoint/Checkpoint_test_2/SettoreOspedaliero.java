@@ -3,7 +3,7 @@ package Checkpoint_test_2;
 public class SettoreOspedaliero {
     String identificativo;
     String nome;
-    Dottore[] dottori = new Dottore[5];
+    Dottore[] dottori = new Dottore[4];
 
     public SettoreOspedaliero(String identificativo, String nome) {
         this.identificativo = identificativo;
@@ -34,7 +34,12 @@ public class SettoreOspedaliero {
         this.dottori = dottori;
     }
 
-    public void mediaPazienti(SettoreOspedaliero settore) {
-        
+    public int mediaPazienti(SettoreOspedaliero settore) {
+        int pazientiPerSettore = 0;
+        for (Dottore dottore : dottori) {
+            int pazientiPerDottori = dottore.getPazienti().length;
+            pazientiPerSettore *= pazientiPerDottori;
+        }
+        return pazientiPerSettore / dottori.length;
     }
 }
