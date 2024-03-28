@@ -5,7 +5,7 @@ public class Noleggio {
     private int numFilm = 0;
 
     public void aggiungiFilm(Film film) {
-        if (numFilm < 500) {
+        if (numFilm < inventario.length) {
             inventario[numFilm++] = film;
             System.out.println("Film aggiunto con successo all'inventario.");
         } else {
