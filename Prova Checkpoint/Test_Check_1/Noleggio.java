@@ -1,4 +1,4 @@
-package Checkpoint_test_1;
+package Test_Check_1;
 
 public class Noleggio {
     private Film[] inventario = new Film[500];
