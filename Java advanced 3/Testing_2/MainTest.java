@@ -10,7 +10,7 @@ import org.junit.Test;
 
 public class MainTest {
     @Test
-    public void testFullDatestteTime() {
+    public void testFullDateTime() {
         ZonedDateTime dateTime = OffsetDateTime.parse("2002-03-01T13:00:00Z").toZonedDateTime();
         String fullDateTime = dateTime.format(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.FULL));
 
