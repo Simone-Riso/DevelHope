@@ -1,10 +1,10 @@
 package Arrays;
+
 public class Array_2 {
     public static void main(String[] args) {
         char[] chars = createCharArray();
         char charToFind = 'g';
-        System.out.println(
-                "Numero occorenze per il carattere: " + charToFind + " : " + findOccurencies(charToFind, chars));
+        System.out.println("Numero occorenze per il carattere: " + charToFind + " : " + findOccurencies(charToFind, chars));
     }
 
     public static char[] createCharArray() {
@@ -25,7 +25,8 @@ public class Array_2 {
                 occ++;
             } else if (carattere1 != toFind) {
                 System.out.println("Errore");
-            } break;
+            }
+            break;
         }
         return occ;
     }
