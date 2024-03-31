@@ -10,8 +10,9 @@ public class Main {
         dottore1.aggiungiPaziente("Paolo");
         dottore1.aggiungiPaziente("Daniel");
         dottore1.aggiungiPaziente("Valerio");
+        dottore1.aggiungiPaziente("Valentina");
 
-        dottore1.ricercaPaziente("Gian");
+        dottore1.ricercaPaziente("Vale");
 
         dottore1.nomeDottore();
         // dottore2.nomeDottore();
