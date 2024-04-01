@@ -5,5 +5,6 @@ public enum NomeCorso {
     LETTERATURA,
     MATEMATICA,
     INGLESE,
-    GIAPPONESE,
+    GIAPPONESE,;
+
 }
