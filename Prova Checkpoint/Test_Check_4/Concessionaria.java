@@ -3,7 +3,6 @@ package Test_Check_4;
 public class Concessionaria {
     private NomeConcessionaria nomeConcessionaria;
     private Auto[] listaAuto = new Auto[10];
-    private int numeroAuto = 0;
 
     public Concessionaria(NomeConcessionaria nomeConcessionaria) {
         this.nomeConcessionaria = nomeConcessionaria;
@@ -26,21 +25,21 @@ public class Concessionaria {
     }
 
     public void aggiungiAuto(Auto auto) {
-        if (numeroAuto < listaAuto.length) {
-            listaAuto[numeroAuto++] = auto;
-            System.out.println("Auto aggiunta con successo all'inventario.");
-        } else {
-            System.out.println("L'inventario è pieno.");
+        for (int i = 0; i < listaAuto.length; i++) {
+            if (listaAuto[i] == null) {
+                listaAuto[i] = auto;
+                break;
+            }
         }
     }
 
     public void mostraInventario() {
         System.out.println("Inventario delle auto:");
-        for (int i = 0; i < numeroAuto; i++) {
-            System.out.println(listaAuto[i]);
-            if (listaAuto == null) {
-                System.out.println("Auto finite");
+        for (int i = 0; i < listaAuto.length; i++) {
+            if (listaAuto[i] == null) {
                 break;
+            } else {
+                System.out.println(listaAuto[i]);
             }
         }
     }
@@ -49,8 +48,23 @@ public class Concessionaria {
         for (int index = 0; index < listaAuto.length; index++) {
             if (listaAuto[index] == auto) {
                 listaAuto[index] = null;
+                System.out.println("Un auto è stata venduta: " + auto);
                 break;
             }
+        }
+    }
+
+    public void ricercaMarca(String marca) {
+        boolean marcaTrovata = false;
+        for (Auto auto : listaAuto) {
+            if (auto != null && auto.getMarca().equalsIgnoreCase(marca)) {
+                marcaTrovata = true;
+                System.out.println("Trovata auto della marca " + marca + ": " + auto);
+            }
+        }
+
+        if (!marcaTrovata) {
+            System.out.println("Nessuna auto trovata della marca: " + marca);
         }
     }
 
