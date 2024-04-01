@@ -1,7 +1,7 @@
 package Test_Check_3;
 
 public class Studente {
-    int numMatricola;
+    Integer numMatricola;
     String nome;
     String cognome;
     String indirizzoResidenza;
@@ -13,11 +13,11 @@ public class Studente {
         this.indirizzoResidenza = indirizzoResidenza;
     }
 
-    public Studente(int numMatricola) {
+    public Studente(Integer numMatricola) {
         this.numMatricola = numMatricola;
     }
 
-    public int getNumMatricola() {
+    public Integer getNumMatricola() {
         return numMatricola;
     }
 
