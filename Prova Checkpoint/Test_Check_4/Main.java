@@ -11,10 +11,13 @@ public class Main {
         concessionaria.aggiungiAuto(auto2);
         concessionaria.aggiungiAuto(auto3);
 
+        concessionaria.mostraInventario();
+
         concessionaria.rimuoviAuto(auto3);
 
         concessionaria.mostraInventario();
 
+        concessionaria.ricercaMarca("BMW");
 
     }
 }
