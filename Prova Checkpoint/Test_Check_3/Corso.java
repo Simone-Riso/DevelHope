@@ -35,10 +35,12 @@ public class Corso {
     }
 
     public void numStudenti() {
-        for (Studente studente : studentiIscritti) {
-            System.out.println("Studenti iscritti: " + studente);
-            if (studente == null) {
-                System.out.println("Studenti sono scappati");
+        System.out.println("\n" + "Lista studenti iscritti al corso di | " + getNomeCorso() + " | con crediti formativi massimi pari a | " + getCreditiFormativi() + " |:");
+        for (int i = 0; i < studentiIscritti.length; i++) {
+            if (studentiIscritti[i] == null) {
+                break;
+            } else {
+                System.out.println(studentiIscritti[i]);
             }
         }
     }
@@ -49,6 +51,21 @@ public class Corso {
                 studentiIscritti[i] = studente;
                 break;
             }
+        }
+    }
+
+    public void ricercaNumMatricola(Integer numeroMatricola) {
+        System.out.println("\n" + "Ricerca matricola numero: | " + numeroMatricola + " | in corso...");
+        boolean matricolaTrovata = false;
+        for (Studente studente : studentiIscritti) {
+            if (studente != null && studente.getNumMatricola().equals(numeroMatricola)) {
+                matricolaTrovata = true;
+                System.out.println("Matricola trovata: " + studente);
+            }
+        }
+
+        if (!matricolaTrovata) {
+            System.out.println("Matricola non trovata " + numeroMatricola);
         }
     }
 
