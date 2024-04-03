@@ -33,6 +33,16 @@ public class Concessionaria {
         }
     }
 
+    public void rimuoviAuto(Auto auto) {
+        for (int index = 0; index < listaAuto.length; index++) {
+            if (listaAuto[index] == auto) {
+                listaAuto[index] = null;
+                System.out.println("Un auto è stata venduta: " + auto);
+                break;
+            }
+        }
+    }
+
     public void mostraInventario() {
         System.out.println("Inventario delle auto:");
         for (int i = 0; i < listaAuto.length; i++) {
@@ -40,16 +50,6 @@ public class Concessionaria {
                 break;
             } else {
                 System.out.println(listaAuto[i]);
-            }
-        }
-    }
-
-    public void rimuoviAuto(Auto auto) {
-        for (int index = 0; index < listaAuto.length; index++) {
-            if (listaAuto[index] == auto) {
-                listaAuto[index] = null;
-                System.out.println("Un auto è stata venduta: " + auto);
-                break;
             }
         }
     }
