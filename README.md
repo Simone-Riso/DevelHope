@@ -1,3 +1,3 @@
-Repository per gli esercizi Develhope.
+Repository per esercizi.
 
 Gli esercizi sono organizzati per cartelle.
